@@ -5,6 +5,7 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
 import { Link } from 'react-router-dom';
 import SmoothScrolling from './smoothScrolling';
 import { useSelector } from 'react-redux';
+import { user } from './../mocks/mock';
 
 const navigation = [
   { name: 'Преимущества', to: 'advantages' },
@@ -19,7 +20,7 @@ const scrollTo = (to) => {
   SmoothScrolling.scrollTo(to);
 };
 export default function Example() {
-  const { user } = useSelector((state) => state.app);
+  // const { user } = useSelector( ( state ) => state.app );
 
   return (
     <Disclosure as='nav' className='bg-indigo-600 h-20 mb-10 fixed z-50 w-full'>

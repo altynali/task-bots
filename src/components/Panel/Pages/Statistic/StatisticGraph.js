@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
 import { Line } from 'react-chartjs-2';
 import { useSelector } from 'react-redux';
+import { user } from './../../../mocks/mock';
 
 export default function Index() {
-  const { user } = useSelector((state) => state.app);
-
-  console.log(user);
+  // const { user } = useSelector((state) => state.app);
 
   return (
     <div>

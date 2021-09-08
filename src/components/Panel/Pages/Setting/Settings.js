@@ -1,9 +1,10 @@
 import { useSelector } from 'react-redux';
 import ClipboardCopyIcon from '@heroicons/react/outline/ClipboardCopyIcon';
 import React from 'react';
+import { user } from './../../../mocks/mock';
 
 const Settings = () => {
-  const { user } = useSelector((state) => state.app);
+  // const { user } = useSelector((state) => state.app);
   return (
     <div className={'bg-gray-700 p-4 rounded-xl mb-6 text-gray-100'}>
       <div className='font-medium text-xl pb-4 border-b border-defaultGray-100'>

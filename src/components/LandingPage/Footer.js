@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const Footer = () => {
-  const { globalData } = useSelector((state) => state.app);
+  // const { globalData } = useSelector((state) => state.app);
 
   return (
     <div className='w-full bg-indigo-700 text-white'>

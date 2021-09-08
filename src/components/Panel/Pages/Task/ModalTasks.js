@@ -8,7 +8,7 @@ export default function Modal() {
   const [showModal, setShowModal] = useState(false);
   const dispatch = useDispatch();
 
-  const { tasks_stats } = useSelector((state) => state.app);
+  // const { tasks_stats } = useSelector((state) => state.app);
 
   const platform = platforms.find((ext) => ext.value);
   const action = actions.find((ext) => ext.value);
@@ -50,7 +50,7 @@ export default function Modal() {
     //     }
     // ]
 
-    dispatch(massTasks(newTask));
+    //dispatch(massTasks(newTask));
   };
 
   return (
@@ -84,19 +84,19 @@ export default function Modal() {
                   <div className='text-lg'>Статистика по заданиям</div>
                   <div className='grid grid-cols-2 gap-2 mt-2'>
                     <span className='text-defaultBlue-300'>
-                      Активные: {tasks_stats?.in_work}
+                      Активные: 0{/* {tasks_stats?.in_work} */}
                     </span>
                     <span className='text-green-600'>
-                      Выполненные: {tasks_stats?.completed}
+                      Выполненные: 0{/* {tasks_stats?.completed} */}
                     </span>
                     <span className='text-red-500'>
-                      Остановленные: {tasks_stats?.paused}
+                      Остановленные: 0{/* {tasks_stats?.paused} */}
                     </span>
                     <span className='text-red-500'>
-                      Отмененные: {tasks_stats?.canceled}
+                      Отмененные: 0{/* {tasks_stats?.canceled} */}
                     </span>
                     <span className='text-red-500'>
-                      Неверные данные: {tasks_stats?.wrong_data}{' '}
+                      Неверные данные: 0{/* {tasks_stats?.wrong_data}{' '} */}
                     </span>
                   </div>
                 </div>

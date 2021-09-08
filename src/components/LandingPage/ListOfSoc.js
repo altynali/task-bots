@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
 const ListOfSoc = ({ activePlatformArr, activeCur, points_per_dollar }) => {
-  console.log(activePlatformArr);
   return (
     <div className={'bg-gray-700 p-4 rounded-xl mb-6 w-full'}>
       <div className='text-lg xl:text-sm lg:text-sm md:text-sm font-bold text-defaultGray-100 p-3 grid gap-4 sm:grid-cols-2 lg:flex md:flex lg:flex-row items-center '>

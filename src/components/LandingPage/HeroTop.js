@@ -2,9 +2,10 @@ import React from 'react';
 import main from '../../images/main.png';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { user } from './../mocks/mock';
 
 export default function HeroTop() {
-  const { user } = useSelector((state) => state.app);
+  // const { user } = useSelector((state) => state.app);
 
   return (
     <div className='relative bg-gray-800 overflow-hidden pt-20'>

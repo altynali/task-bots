@@ -3,13 +3,14 @@ import 'animate.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { login } from './../../redux/actions/login';
 import { fetchUserAndServices } from '../../redux/actions/app';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [username, setUserName] = useState('');
   const [password, setPassword] = useState('');
 
-  const { globalData } = useSelector((state) => state.app);
-  const { errorLogin } = useSelector((state) => state.login);
+  // const { globalData } = useSelector((state) => state.app);
+  // const { errorLogin } = useSelector((state) => state.login);
 
   const dispatch = useDispatch();
 
@@ -27,7 +28,7 @@ const Login = () => {
           'fixed z-20 flex items-center justify-center h-14 z-2 w-full bg-gray-700'
         }
       >
-        <a href='#' className={'flex items-center justify-center'}>
+        {/* <a href='#' className={'flex items-center justify-center'}>
           <picture className='w-auto h-10 mr-2'>
             <source type='image/webp' srcSet={globalData.global.logo_webp} />
             <source srcSet={globalData.global.logo} />
@@ -40,7 +41,10 @@ const Login = () => {
           <span className='text-3xl font-extrabold text-defaultGray-300'>
             {globalData.global.site_name}
           </span>
-        </a>
+        </a> */}
+        <Link className='text-xl' to='/'>
+          LOGO
+        </Link>
       </div>
       {/* <div
         className={
