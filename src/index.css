@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://cdn.syncfusion.com/ej2/material.css');
+
+* {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.loader {
+  border-top-color: theme('colors.defaultBlue.200') !important;
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  background: #969696;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4d88bd;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #336a9b;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #6daee9;
+}
+
+.horizontal-scroller::-webkit-scrollbar {
+  display: none;
+}
+.datepicker-control-section {
+  max-width: 246px;
+  margin: 30px auto;
+  padding-top: 50px;
+}
+
+.showStatistic {
+  display: none;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid rgba(99, 102, 241, var(--tw-bg-opacity));
+  margin-top: -32px;
+}
+
+.statisticHover:hover + .showStatistic {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-menu .side1 {
+  -webkit-animation: downWindow 0.3s linear 1;
+  animation: downWindow 0.3s linear 1;
+}
+
+.side-menu .side2 {
+  -webkit-animation: downWindow 0.4s linear 1;
+  animation: downWindow 0.4s linear 1;
+}
+
+.down-popup .button1 {
+  -webkit-animation: downWindow 0.125s linear 1;
+  animation: downWindow 0.125s linear 1;
+}
+
+.down-popup .button2 {
+  -webkit-animation: downWindow 0.225s linear 1;
+  animation: downWindow 0.225s linear 1;
+}
+.down-popup .button3 {
+  -webkit-animation: downWindow 0.325s linear 1;
+  animation: downWindow 0.325s linear 1;
+}
+.down-popup .button4 {
+  -webkit-animation: downWindow 0.425s linear 1;
+  animation: downWindow 0.425s linear 1;
+}
+.down-popup .button5 {
+  -webkit-animation: downWindow 0.525s linear 1;
+  animation: downWindow 0.525s linear 1;
+}
+
+.down-popup .button6 {
+  -webkit-animation: downWindow 0.625s linear 1;
+  animation: downWindow 0.625s linear 1;
+}
+
+@-webkit-keyframes downWindow {
+  0% {
+    -webkit-transform: translateY(-20%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@keyframes downWindow {
+  0% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
